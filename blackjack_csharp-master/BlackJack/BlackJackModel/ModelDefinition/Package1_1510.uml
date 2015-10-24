@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="0f7ee9a4-556d-4bfb-a162-3d528a312674"
+  name="model"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="cc3476bf-6b37-4616-9ed9-39126999d53a"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DBlackJack.model"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="87c5b5a6-277d-45bb-b20a-31ca333da5ff"
+        LastKnownName="rules"
+        LastKnownLocation="Package_1519.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="03ce4b28-a005-4acf-b2e0-f8d612bdfe55"
+        name="Player"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="76f9c4dc-1f04-4227-8056-861b44ea706f"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FUser%2FDocuments%2FGitHub%2FOO_Worksshop_3%2Fblackjack_csharp-master%2FBlackJack%2Fbin%2FDebug%2FBlackJack.exe Namespace%3DBlackJack.model Type%3DPlayer"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="a2c5ac1d-c4ae-4d55-8cd6-441082554e27"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6bc572ea-248a-4842-b422-0d30f81a95c1">
+                <propertyInstance
+                  Id="7a736aba-2f10-4aec-80e7-caa4d7c455d7"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8c0b158f-0cfa-43f8-a256-efe6d8c29fe8">
+                <propertyInstance
+                  Id="90b0f6da-7604-429b-af15-147488610904"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="efa23c70-2f9f-42a4-b82f-80064b01041a">
+                <propertyInstance
+                  Id="da4f8c11-0ff5-42cf-a36c-baeaf64a1a2d"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="30e1b87f-6071-4633-b1f5-2f04de053c04">
+                <propertyInstance
+                  Id="f757f428-6475-43dc-91df-88269b0ce889"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="650e3c6e-d2cb-4bee-804e-b89e75d99fac">
+                <propertyInstance
+                  Id="4d087e6f-ee36-4929-b738-eadb21633048"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

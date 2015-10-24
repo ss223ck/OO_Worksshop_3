@@ -14,13 +14,19 @@ namespace BlackJack.model
         private rules.IHitStrategy m_hitRule;
         private rules.IWhoWinsRule m_winRule;
 
+        private List<BlackJackObserver> m_BlackJackObserver;
+
         public Dealer(rules.RulesFactory a_rulesFactory)
         {
             m_newGameRule = a_rulesFactory.GetNewGameRule();
             m_hitRule = a_rulesFactory.GetHitRule();
             m_winRule = a_rulesFactory.GetWhoWinsRule();
+            m_BlackJackObserver = new List<BlackJackObserver>();
         }
-
+        public void AddSubscriber(BlackJackObserver observer)
+        {
+            m_BlackJackObserver.Add(observer);
+        }
         public bool NewGame(Player a_player)
         {
             if (m_deck == null || IsGameOver())
@@ -74,11 +80,15 @@ namespace BlackJack.model
             }
             return true;
         }
-        public void GetCard(Player player)
+        public void GetCard(Player player, bool showCard = true)
         {
             Card c = m_deck.GetCard();
-            c.Show(true);
+            c.Show(showCard);
             player.DealCard(c);
+            foreach(BlackJackObserver observer in m_BlackJackObserver)
+            {
+                observer.CardDisplayed();
+            }
         }
     }
 }
