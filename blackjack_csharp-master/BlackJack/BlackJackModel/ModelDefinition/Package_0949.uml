@@ -11,11 +11,20 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="17e1b8cd-c32e-438b-b80b-a8c6bc5c9ce0">
+            <interfaceMoniker
+              Id="46a5939e-8da6-4903-842a-bf8bdc919e55"
+              LastKnownName="BlackJackObserver"
+              LastKnownLocation="Package1_0950.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
         <targetEnds>
           <association
             Id="284d1419-29ac-448c-ab92-92402db1b15a"
             isDerived="false"
-            sourceEndRoleName="PlayGame"
+            sourceEndRoleName=""
             targetEndRoleName="a_game"
             isLeaf="false"
             isAbstract="false">
@@ -27,7 +36,6 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="35b70e15-5871-4f3c-a39c-c35822055bf4"
-                  name="PlayGame"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -35,7 +43,18 @@
                   isDerivedUnion="false"
                   aggregation="None"
                   isComposite="false"
-                  isNavigableOwned="false" />
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="6f3bfef5-95cf-4e42-9967-038060b25f3c"
+                      name="Lower" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="8946fc74-3628-4b39-bde8-8bbe5ed42c38"
+                      name="Upper" />
+                  </upperValueInternal>
+                </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -47,14 +66,25 @@
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false" />
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="9257c152-1dfe-4791-820a-f9a3e60b1da4"
+                      name="Lower" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="93573205-cec7-47f0-bd4b-dfcf9301cf6e"
+                      name="Upper" />
+                  </upperValueInternal>
+                </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
           <association
             Id="e14b3ecc-579e-4c75-897f-de5ffa8091ea"
             isDerived="false"
-            sourceEndRoleName="PlayGame"
+            sourceEndRoleName=""
             targetEndRoleName="a_view"
             isLeaf="false"
             isAbstract="false">
@@ -66,7 +96,6 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="defc711d-5f8e-48d1-b0aa-5c0c64982c4a"
-                  name="PlayGame"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -74,7 +103,18 @@
                   isDerivedUnion="false"
                   aggregation="None"
                   isComposite="false"
-                  isNavigableOwned="false" />
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="2a9a3101-acd6-4668-8b7d-89523815112e"
+                      name="Lower" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="78a1db4e-6e28-486f-8878-551767a7b42b"
+                      name="Upper" />
+                  </upperValueInternal>
+                </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -91,6 +131,16 @@
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="894f0cad-5aef-4b2c-83b6-1c865e931a79"
+            name="CardDisplayed"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
   </packagedElements>

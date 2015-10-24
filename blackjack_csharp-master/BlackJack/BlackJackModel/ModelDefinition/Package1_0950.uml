@@ -248,7 +248,18 @@
                   isDerivedUnion="false"
                   aggregation="None"
                   isComposite="false"
-                  isNavigableOwned="false" />
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="41b110a0-34a5-479f-96af-1850d41f2672"
+                      name="Lower" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ad946d21-4389-4d7a-aebf-3bcc0bff955c"
+                      name="Upper" />
+                  </upperValueInternal>
+                </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -280,7 +291,7 @@
           <association
             Id="f959db24-33c5-486f-8eb6-388e53e0fe6e"
             isDerived="false"
-            sourceEndRoleName="Dealer"
+            sourceEndRoleName=""
             targetEndRoleName="m_winRule"
             isLeaf="false"
             isAbstract="false">
@@ -292,7 +303,6 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="87e7446f-b47e-48fa-b9af-9bed520c7477"
-                  name="Dealer"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -300,7 +310,18 @@
                   isDerivedUnion="false"
                   aggregation="None"
                   isComposite="false"
-                  isNavigableOwned="false" />
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="8c2ccef1-aea7-45a0-bf07-506a7457aca2"
+                      name="Lower" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ec531516-931b-4ab9-949c-1accd0fd7896"
+                      name="Upper" />
+                  </upperValueInternal>
+                </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -312,7 +333,18 @@
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false" />
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="084e274e-0324-4da0-99a9-fb2535d19f4f"
+                      name="Lower" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="8d06b666-aebc-4df7-aa5e-f8e3f8178871"
+                      name="Upper" />
+                  </upperValueInternal>
+                </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>

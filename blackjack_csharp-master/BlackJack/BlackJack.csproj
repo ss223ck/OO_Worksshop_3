@@ -82,6 +82,7 @@
     <Compile Include="model\rules\InternationalNewGameStrategy.cs" />
     <Compile Include="model\rules\INewGameStrategy.cs" />
     <Compile Include="model\rules\IWhoWinsRule.cs" />
+    <Compile Include="model\rules\PlayerWinsStrategy.cs" />
     <Compile Include="model\rules\RulesFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
