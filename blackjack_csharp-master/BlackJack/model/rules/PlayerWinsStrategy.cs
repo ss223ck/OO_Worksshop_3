@@ -11,12 +11,12 @@ namespace BlackJack.model.rules
         {
             if(player.CalcScore() > maxScore)
             {
-                return false;
+                return true;
             } else if(dealer.CalcScore() > maxScore)
             {
-                return true;
+                return false;
             }
-            return dealer.CalcScore() <= player.CalcScore();
+            return player.CalcScore() < dealer.CalcScore();
         }
     }
 }

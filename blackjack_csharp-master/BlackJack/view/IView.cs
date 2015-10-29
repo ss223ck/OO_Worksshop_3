@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BlackJack.view
 {
-    public enum InputEvents { NewGame, Hit, Stand, Quit, WrongInput};
+    public enum InputEvents { NewGame, Hit, Stand, Quit, WrongInput };
     interface IView
     {
         

@@ -68,17 +68,15 @@ namespace BlackJack.model
         {
             if(m_deck != null)
             {
+                //fixed wrongfull implementation of sequence diagram. Just removed unnecessary code
                 ShowHand();
-                foreach(Card c in GetHand())
+                while (m_hitRule.DoHit(this))
                 {
-                    c.Show(true);
+                    GetCard(this);
                 }
+                return true;
             }
-            while(m_hitRule.DoHit(this))
-            {
-                GetCard(this);
-            }
-            return true;
+            return false;
         }
         public void GetCard(Player player, bool showCard = true)
         {

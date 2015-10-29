@@ -5,6 +5,7 @@ using System.Text;
 
 namespace BlackJack.controller
 {
+
     class PlayGame : model.BlackJackObserver
     {
         private view.IView a_view;
